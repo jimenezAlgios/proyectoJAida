@@ -1,11 +1,11 @@
 
 class Jugador:
     nombre = ""
-    tipo = ""
+    vida = 100
 
-    def __init__(self, nombre, tipo):
+    def __init__(self, nombre):
         self.nombre = nombre
-        self.tipo = tipo
+      
 
 
     
