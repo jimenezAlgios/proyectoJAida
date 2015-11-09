@@ -1,8 +1,11 @@
-from jugar import jugarPartida
-
 import sys
+import gestorJugador.ListaJugadores
+import gestorPartida.jugar
 
 def imprimirMenu():
+    
+    listaJ=gestorJugador.ListaJugadores.ListaJugadores()
+    
     print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     print "********* Elige una opcion*********"
@@ -14,32 +17,26 @@ def imprimirMenu():
     print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     
-    num=0
+   
+    
+    #num=0
     num = input()
-    
-    
-    '''
-    a = int(raw_input('dame un numero'))
->     sys.exit(0)
->
-> # Si el dato no es un numero entero ejecutamos la salida con codigo 1
-> (terminacion anormal)
-> # si quisieramos salir tras una ejecucion correcta seria con codigo 0.
-> except:
->     sys.exit(1)
-    '''
-    
+   
     if num==1:
-        jugarPartida()
+        print "inserta nombre jugador"
+        nombre=input()
+        gestorPartida.jugar.jugarPartida(nombre)
     
-    #elseif num==2:
-        #ListaJugadores.addJugador()
-    #else:
-       # if numm=3:
+    elif num==2:
+        print "prueba punto 2"
+        listaJ.addJugador()  
+        
+    #elif num==3      
       #  ListaJugadores.mostrarEstadisticas()
     elif num == 4:
         print "bye byeee"
         sys.exit()
+    
             
         
         
