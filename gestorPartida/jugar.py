@@ -1,8 +1,9 @@
+import gestorJugador.Jugador
 
-
-def jugarPartida(nombre):  
+def jugarPartida(self, nombre):  
     print ("empieza el juego")
     print ("empieza el juego2")
-    jugador=Jugador(nombre)  
+   
+    jugador=gestorJugador.Jugador(nombre)  
     print ("empieza el juego3")
     

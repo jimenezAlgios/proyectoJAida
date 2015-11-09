@@ -5,14 +5,14 @@ class Jugador:
     puntuacion= 0
 
     #constructor
-    def Jugador(self, nombre):
+    def __init__(self, nombre):
         self.nombre = nombre
         
-        
-        
+                
     def imprimirPuntuacion(self):
-        print "el jugador " + nombre + "tiene: "+ puntuacion+" puntos"
+        print "el jugador " + self.nombre + "tiene: "+ self.puntuacion+" puntos"
 
     
-    
+    def actualizarPuntos(self,puntos):
+        self.puntuacion=self.puntuacion+puntos
     

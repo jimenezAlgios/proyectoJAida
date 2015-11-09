@@ -1,4 +1,5 @@
 import sys
+
 import gestorJugador.ListaJugadores
 import gestorPartida.jugar
 
@@ -21,16 +22,14 @@ def imprimirMenu():
     
     #num=0
     num = input()
-   
-    if num==1:
-        print "inserta nombre jugador"
-        nombre=input()
-        gestorPartida.jugar.jugarPartida(nombre)
-    
+    nombre=""
+    if num==1: 
+        nombre=input("inserta nombre jugador ")
+        print nombre
+        gestorPartida.jugar.jugarPartida(nombre)    
     elif num==2:
         print "prueba punto 2"
-        listaJ.addJugador()  
-        
+        listaJ.addJugador()      
     #elif num==3      
       #  ListaJugadores.mostrarEstadisticas()
     elif num == 4:
