@@ -18,20 +18,18 @@ def imprimirMenu():
     print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     
-   
-    
     #num=0
     num = input()
     nombre=""
     if num==1: 
-        nombre=input("inserta nombre jugador ")
-        print nombre
+        nombre=raw_input("inserta nombre jugador ")
+        
         gestorPartida.jugar.jugarPartida(nombre)    
     elif num==2:
         print "prueba punto 2"
         listaJ.addJugador()      
-    #elif num==3      
-      #  ListaJugadores.mostrarEstadisticas()
+    #elif num==3:      
+    #    ListaJugadores.mostrarEstadisticas()
     elif num == 4:
         print "bye byeee"
         sys.exit()

@@ -1,4 +1,4 @@
-
+from gestorJugador.Jugador import Jugador
 
 class ListaJugadores:
     listaJ = []
@@ -11,22 +11,24 @@ class ListaJugadores:
         
         print "Inserta nombre de jugador"
         
-        nombre = input()
+        nombre = raw_input()
         jugador = Jugador(nombre)
-        
-        #print jugador.
+        lista=ListaJugadores.listaJ
+        numJugadores=ListaJugadores.numJugadores
+        #prueba 
+        print numJugadores
         
         #mirar si existe
-        if lista.index( nombre )==null: 
-            listaJ.append(jugador)
+        if lista.index( nombre )==None: 
+            lista.append(jugador)
             numJugadores = numJugadores +1
         else:
             print "El nombre ya existe"
-            addJugador ()
+            ListaJugadores.addJugador()
             
     def imprimirPuntuacion(self):
         
-        for i in range(numJugadores):
+        for i in range(ListaJugadores.numJugadores):
             
             jugador = Jugador(ListaJugadores.listaJ[i])  
             jugador.imprimirPuntuacion() 
